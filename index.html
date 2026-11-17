@@ -143,11 +143,6 @@
                                      onerror="this.src='https://placehold.co/400x400/4f46e5/ffffff?text=ENG+CHANTHA'"
                                      alt="អេង ចន្ថា - ENG CHANTHA" 
                                      class="w-full h-full object-cover rounded-2xl">
-                                <label for="upload-profile" class="no-print cursor-pointer absolute inset-1.5 rounded-2xl bg-slate-900/60 opacity-0 group-hover:opacity-100 transition-opacity flex flex-col items-center justify-center text-white text-xs font-medium gap-1">
-                                    <i data-lucide="camera" class="w-6 h-6"></i>
-                                    <span data-i18n="change-photo">ប្តូររូបភាព</span>
-                                </label>
-                                <input type="file" id="upload-profile" accept="image/*" class="hidden" onchange="previewImage(event, 'profile-img')">
                             </div>
 
                             <div class="pt-2 sm:pb-2">
@@ -257,10 +252,6 @@
                         <span data-i18n="sec2-title">២. ប្រវត្តិនៃការសិក្សា (Education)</span>
                     </h2>
                 </div>
-                <p class="text-xs sm:text-sm text-slate-500 dark:text-slate-400 no-print flex items-center gap-1.5">
-                    <i data-lucide="image-plus" class="w-4 h-4 text-indigo-500"></i>
-                    <span data-i18n="sec2-hint">អ្នកអាចចុចលើប៊ូតុង <strong>"ប្តូររូបភាព"</strong> ដើម្បីដាក់រូបភាពសាលាផ្ទាល់ខ្លួនរបស់អ្នក</span>
-                </p>
             </div>
 
             <!-- Education Cards Grid -->
@@ -270,7 +261,8 @@
                 <article class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-lg shadow-slate-200/30 dark:shadow-none hover:border-indigo-500/50 transition-all duration-300 flex flex-col">
                     <div class="relative h-56 overflow-hidden bg-slate-100 dark:bg-slate-800">
                         <img id="edu-img-1"
-                             src="អង្គ.jpg"
+                             src="អង្គ .jpg"
+                             onerror="this.src='https://placehold.co/800x450/3b82f6/ffffff?text=Primary+School'"
                              alt="សាលាបឋមសិក្សា អង្គ"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
@@ -280,13 +272,6 @@
                             <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
                             <span data-i18n="edu1-year">ឆ្នាំ 2014 - 2020</span>
                         </div>
-
-                        <!-- Change Photo Button -->
-                        <label for="upload-edu-1" class="no-print cursor-pointer absolute top-4 right-4 px-3 py-1.5 rounded-xl bg-black/50 hover:bg-black/75 backdrop-blur-md text-white text-xs font-medium flex items-center gap-1.5 transition-colors">
-                            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
-                            <span data-i18n="change-photo">ប្តូររូបភាព</span>
-                        </label>
-                        <input type="file" id="upload-edu-1" accept="image/*" class="hidden" onchange="previewImage(event, 'edu-img-1')">
 
                         <!-- Level Label -->
                         <div class="absolute bottom-4 left-4 right-4 text-white">
@@ -313,7 +298,8 @@
                 <article class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200/80 dark:border-slate-800 shadow-lg shadow-slate-200/30 dark:shadow-none hover:border-indigo-500/50 transition-all duration-300 flex flex-col">
                     <div class="relative h-56 overflow-hidden bg-slate-100 dark:bg-slate-800">
                         <img id="edu-img-2"
-                             src="អនុអង្គ.jpg"
+                             src="អនុអង្គ .jpg"
+                             onerror="this.src='https://placehold.co/800x450/0d9488/ffffff?text=Secondary+School'"
                              alt="អនុវិទ្យាល័យ"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
@@ -323,13 +309,6 @@
                             <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
                             <span data-i18n="edu2-year">ឆ្នាំ 2020 - 2023</span>
                         </div>
-
-                        <!-- Change Photo Button -->
-                        <label for="upload-edu-2" class="no-print cursor-pointer absolute top-4 right-4 px-3 py-1.5 rounded-xl bg-black/50 hover:bg-black/75 backdrop-blur-md text-white text-xs font-medium flex items-center gap-1.5 transition-colors">
-                            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
-                            <span data-i18n="change-photo">ប្តូររូបភាព</span>
-                        </label>
-                        <input type="file" id="upload-edu-2" accept="image/*" class="hidden" onchange="previewImage(event, 'edu-img-2')">
 
                         <!-- Level Label -->
                         <div class="absolute bottom-4 left-4 right-4 text-white">
@@ -357,6 +336,7 @@
                     <div class="relative h-56 overflow-hidden bg-slate-100 dark:bg-slate-800">
                         <img id="edu-img-3"
                              src="១ មិថុនា.jpg"
+                             onerror="this.src='https://placehold.co/800x450/4f46e5/ffffff?text=High+School'"
                              alt="វិទ្យាល័យ ហ៊ុនសែន ១ មិថុនា"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-slate-900/20 to-transparent"></div>
@@ -366,13 +346,6 @@
                             <i data-lucide="calendar" class="w-3.5 h-3.5"></i>
                             <span data-i18n="edu3-year">ឆ្នាំ 2023 - 2026</span>
                         </div>
-
-                        <!-- Change Photo Button -->
-                        <label for="upload-edu-3" class="no-print cursor-pointer absolute top-4 right-4 px-3 py-1.5 rounded-xl bg-black/50 hover:bg-black/75 backdrop-blur-md text-white text-xs font-medium flex items-center gap-1.5 transition-colors">
-                            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
-                            <span data-i18n="change-photo">ប្តូររូបភាព</span>
-                        </label>
-                        <input type="file" id="upload-edu-3" accept="image/*" class="hidden" onchange="previewImage(event, 'edu-img-3')">
 
                         <!-- Level Label -->
                         <div class="absolute bottom-4 left-4 right-4 text-white">
@@ -400,6 +373,7 @@
                     <div class="relative h-56 overflow-hidden bg-slate-100 dark:bg-slate-800">
                         <img id="edu-img-4"
                              src="sakol.jpg"
+                             onerror="this.src='https://placehold.co/800x450/7c3aed/ffffff?text=NTTI+University'"
                              alt="NTTI (National Technical Training Institute)"
                              class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
                         <div class="absolute inset-0 bg-gradient-to-t from-slate-900/85 via-slate-900/25 to-transparent"></div>
@@ -409,13 +383,6 @@
                             <span class="w-2 h-2 rounded-full bg-emerald-400 animate-ping"></span>
                             <span data-i18n="edu4-year">បច្ចុប្បន្ន (កំពុងសិក្សា)</span>
                         </div>
-
-                        <!-- Change Photo Button -->
-                        <label for="upload-edu-4" class="no-print cursor-pointer absolute top-4 right-4 px-3 py-1.5 rounded-xl bg-black/50 hover:bg-black/75 backdrop-blur-md text-white text-xs font-medium flex items-center gap-1.5 transition-colors">
-                            <i data-lucide="camera" class="w-3.5 h-3.5"></i>
-                            <span data-i18n="change-photo">ប្តូររូបភាព</span>
-                        </label>
-                        <input type="file" id="upload-edu-4" accept="image/*" class="hidden" onchange="previewImage(event, 'edu-img-4')">
 
                         <!-- Level Label -->
                         <div class="absolute bottom-4 left-4 right-4 text-white">
